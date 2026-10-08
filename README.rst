@@ -16,9 +16,6 @@ Documentation
 
 The documentation is available at `readthedocs <https://mccli.readthedocs.io/>`_.
 
-..
-  or `GitHub Pages <https://dianagudu.github.io/mccli/>`_.
-
 .. end-of-intro
 .. beginning-of-test-server
 

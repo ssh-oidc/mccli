@@ -14,7 +14,7 @@ For a full description of the options, use the help option --- also on each subc
 
 .. rubric:: motley_cue endpoint
 
-`motley_cue <https://github.com/dianagudu/motley_cue>`_ is the server-side software that handles the mapping of OIDC identities to local accounts. 
+`motley_cue <https://github.com/ssh-oidc/motley_cue>`_ is the server-side software that handles the mapping of OIDC identities to local accounts. 
 ``mccli`` queries motley_cue's REST API to trigger local account provisioning or retrieve the local username to be by SSH.
 
 Ideally, as a user you do not need to know anything about it. However, you might encounter the following error message: ``No motley_cue service found on host``.

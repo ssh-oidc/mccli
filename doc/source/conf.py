@@ -114,7 +114,7 @@ html_show_sourcelink = True
 html_theme_options = {
     "description": "SSH client wrapper for SSH with OIDC access token",
     "logo": "logos/mccli.png",
-    "github_user": "dianagudu",
+    "github_user": "ssh-oidc",
     "github_repo": "mccli",
     "canonical_url": "https://mccli.readthedocs.io/",
     "touch_icon": "logos/mccli-notext.png",

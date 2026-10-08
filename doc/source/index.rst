@@ -23,7 +23,7 @@ method, this part of the documentation is for you.
    api
 
 
-mccli is developed on `Github <https://github.com/dianagudu/mccli>`_. Please report `issues <https://github.com/dianagudu/mccli/issues>`_ there as well.
+mccli is developed on `Github <https://github.com/ssh-oidc/mccli>`_. Please report `issues <https://github.com/ssh-oidc/mccli/issues>`_ there as well.
 
 
 Indices and tables
