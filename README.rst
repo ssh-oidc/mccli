@@ -8,7 +8,7 @@ For server-side software, see `motley_cue <https://motley-cue.readthedocs.io>`_.
 Compatibility
 -------------
 
-mccli works with Python 3 (>=3.7), and only Linux. Windows support is planned as plugins for popular SSH clients, such as PuTTY.
+mccli works with Python 3 (>=3.10), and only Linux. Windows support is planned as plugins for popular SSH clients, such as PuTTY.
 
 
 Documentation
