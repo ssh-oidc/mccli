@@ -6,6 +6,7 @@
 
   installation
   usage
+  development
 
 .. include:: ../../README.rst
   :start-after: beginning-of-test-server
