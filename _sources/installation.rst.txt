@@ -15,14 +15,14 @@ than the development version.
 Installing the development version
 ----------------------------------
 
-The development version of mccli can be installed from the ``master`` branch
-of the `GitHub mccli repository <https://github.com/dianagudu/mccli>`_ and
+The development version of mccli can be installed from the ``develop`` branch
+of the `GitHub mccli repository <https://github.com/ssh-oidc/mccli>`_ and
 can be installed as follows (note the ``-e`` switch to install it in editable
 or "develop mode"):
 
 .. code-block:: bash
 
-   git clone https://github.com/dianagudu/mccli
+   git clone -b develop https://github.com/ssh-oidc/mccli
    cd mccli
    pip install -e .
 

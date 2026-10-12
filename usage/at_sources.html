@@ -7,14 +7,14 @@
 
     <title>Access Token source &#8212; mccli</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=6c7590d8" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css?v=09a796e2" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8fd29722" />
-    <script src="../_static/documentation_options.js?v=020ce317"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/documentation_options.js?v=a674670e"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=7af948fa"></script>
     <link rel="icon" href="../_static/mccli.ico"/>
@@ -53,7 +53,7 @@
 
 
 <p>
-<iframe src="https://ghbtns.com/github-btn.html?user=dianagudu&repo=mccli&type=watch&count=true&size=large&v=2"
+<iframe src="https://ghbtns.com/github-btn.html?user=ssh-oidc&repo=mccli&type=watch&count=true&size=large&v=2"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
 
@@ -84,6 +84,7 @@
 <li class="toctree-l2"><a class="reference internal" href="misc.html">Additional configurations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">For developers</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">mccli package</a></li>
@@ -120,8 +121,8 @@
 <span id="at-sources"></span><h1>Access Token source<a class="headerlink" href="#access-token-source" title="Link to this heading">¶</a></h1>
 <p>You’ll need an OIDC Access Token to authenticate to the SSH server.</p>
 <p>You might want to check out the <a class="reference external" href="https://github.com/indigo-dc/oidc-agent">oidc-agent</a> for that. It is a daemon that can provide valid access tokens from any number of configured OIDC Providers (OPs).</p>
-<p>Once you get the <code class="docutils literal notranslate"><span class="pre">oidc-agent</span></code> running, configure an account for your preferred OP. For example, you can generate an account configuration for the <a class="reference external" href="https://aai.egi.eu/oidc">EGI AAI</a>  named <code class="docutils literal notranslate"><span class="pre">egi</span></code> as follows:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>oidc-gen<span class="w"> </span>--pub<span class="w"> </span>--iss<span class="w"> </span>https://aai.egi.eu/oidc<span class="w"> </span>--scope<span class="w"> </span><span class="s2">&quot;openid profile email offline_access eduperson_entitlement eduperson_scoped_affiliation eduperson_unique_id&quot;</span><span class="w"> </span>egi
+<p>Once you get the <code class="docutils literal notranslate"><span class="pre">oidc-agent</span></code> running, configure an account for your preferred OP. For example, you can generate an account configuration for the <a class="reference external" href="https://aai.egi.eu/auth/realms/egi">EGI AAI</a>  named <code class="docutils literal notranslate"><span class="pre">egi</span></code> as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>oidc-gen<span class="w"> </span>--pub<span class="w"> </span>--iss<span class="w"> </span>https://aai.egi.eu/auth/realms/egi<span class="w"> </span>--scope<span class="w"> </span><span class="s2">"openid profile email offline_access eduperson_entitlement eduperson_scoped_affiliation eduperson_unique_id"</span><span class="w"> </span>egi
 </pre></div>
 </div>
 <p>To use your EGI identity for SSH login, you can set the oidc-agent account in an environment variable:</p>
